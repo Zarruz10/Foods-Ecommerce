@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('members',TeamMember::all());
         View::share('recommendations',Product::inRandomOrder()->take(4)->get());
         
-        
+
         
     }
 

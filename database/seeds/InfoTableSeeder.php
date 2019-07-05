@@ -11,6 +11,7 @@ class InfoTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('infos')->truncate();
         DB::table('infos')->insert([
             'name' => 'FoodCommerce',
             'address' => 'Maharajgunj',
